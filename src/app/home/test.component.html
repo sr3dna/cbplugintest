@@ -1,0 +1,14 @@
+<StackLayout>
+    <Label text="Test Component"></Label>
+    <Button text="Back" (tap)="goBack()" class="-primary -rounded-lg"></Button>
+    <Button text="AddDoc" (tap)="AddDoc()" class="-primary -rounded-lg"></Button>
+
+    <ListView [items]="listData" height="100%" width="100%">
+        <ng-template let-item="item" let-i="index">
+            <StackLayout orientation="horizontal">
+                <Label text="Row# {{i}} {{item}}"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+
+</StackLayout>

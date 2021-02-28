@@ -3,9 +3,11 @@ import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "@nativescript/angular";
 
 import { HomeComponent } from "./home.component";
+import { TestComponent } from "./test.component";
 
 const routes: Routes = [
-    { path: "", component: HomeComponent }
+    { path: "", component: HomeComponent },
+    { path: "test", component: TestComponent }
 ];
 
 @NgModule({
