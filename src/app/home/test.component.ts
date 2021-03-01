@@ -67,6 +67,7 @@ export class TestComponent implements OnInit, OnDestroy {
     cleanup() {
         this.removeDataChangeListener();
         console.log("unsubscribed Couchbase Data Change");
+        this.cbdatabase.close();
     }
 
     ngOnDestroy() {
